@@ -10,7 +10,14 @@
 body {
 	background-image: url(images/patt.png);
 }
-
+.page-header {
+	background-color: rgba(255, 255, 255, 0.8);
+	padding-bottom: 25px;
+	padding-top: 25px;
+	color: #2C71B8;
+	font-family: "Roboto";
+	font-weight: 100;
+}
 .row:after {
 	content: "";
 	display: block;
@@ -24,4 +31,27 @@ body {
 }
 [class *="col-"] {
 	float: left;
+}
+.logo {
+	height: 39px;
+	background-image: url(images/icon_logo.png);
+	background-repeat: no-repeat;
+}
+.menu ul {
+	list-style: none;
+}
+.menu ul li {
+	float: left;
+	width: 140px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	border-left: 1px solid;
+}
+.menu ul li:last-child {
+	border-right: 1px solid;
+}
+.menu ul li a {
+	text-decoration: none;
+	color: #2C71B8;
 }
