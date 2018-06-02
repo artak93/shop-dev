@@ -69,8 +69,14 @@ input[type="text"] {
 	font-size: 21px;
 	padding-left: 20px;
 	border: 1px solid #2C71B8;
-	background-color: rgba(255, 255, 255, 0);
+	background-color: transparent;
 	margin-top: 5px;
+	margin-bottom: 5px;
+	color: #2C71B8;
+}
+input::placeholder {
+	color: #2C71B8;
+	font-weight: 100;
 }
 .search-icon {
 	position: absolute;
@@ -93,6 +99,7 @@ input[type="text"] {
 	background-position: 50% 50%;
 	background-color: white;
 	margin-top: 5px;
+	margin-bottom: 5px;
 }
 .basket-number {
 	position: absolute;
