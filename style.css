@@ -10,7 +10,7 @@
 body {
 	background-image: url(images/patt.png);
 }
-.page-header {
+.header {
 	background-color: rgba(255, 255, 255, 0.8);
 	padding-bottom: 25px;
 	padding-top: 25px;
@@ -23,14 +23,9 @@ body {
 	display: block;
 	clear: both;
 }
-.col-md-3 {
-	width: 25%;
-}
-.col-md-6 {
-	width: 50%;
-}
-[class *="col-"], .search-block {
-	float: left;
+
+[class*="col-"] {
+	padding: 0;
 }
 .logo {
 	height: 39px;
@@ -40,7 +35,7 @@ body {
 }
 .menu ul {
 	list-style: none;
-	margin-left: 10px;
+	margin-left: -30px;
 }
 .menu ul li {
 	float: left;
@@ -60,6 +55,7 @@ body {
 	font-size: 21px;
 }
 .search-block {
+	float: left;
 	position: relative;
 	margin-left: 20px;
 }
