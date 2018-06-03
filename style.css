@@ -2,6 +2,17 @@
 	box-sizing: border-box;
 }
 
+@font-face {
+	font-family: "Glyphter";
+	src: url('Glyphter.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.glyph {
+	font-family: "Glyphter";
+}
+
 .container {
 	margin: 0 auto;
 	width: 1170px;
@@ -35,31 +46,86 @@ body {
 }
 .menu ul {
 	list-style: none;
-	margin-left: -30px;
+	margin-left: -33px;
 }
-.menu ul li {
+.menu > ul > li {
 	float: left;
-	width: 141px;
-	height: 50px;
 	text-align: center;
 	line-height: 50px;
 	border-left: 1px solid;
+}
+.menu > ul > li > a {
+	display: block;
+	width: 141px;
+	height: 50px;
+	text-decoration: none;
 }
 .menu ul li:last-child {
 	border-right: 1px solid;
 	width: 142px;
 }
-.menu ul li a {
+.menu ul li  {
 	text-decoration: none;
 	color: #2C71B8;
 	font-size: 21px;
+}
+.menu > ul > li:nth-child(2) {
+	position: relative;
+}
+.menu > ul > li:nth-child(2):hover {
+	background-color: #2C71B8;
+}
+.menu > ul > li:nth-child(2):hover a {
+	color: white;
+}
+.sub-menu {
+	position: absolute;
+	left: -11px;
+	display: none;
+	z-index: 10;
+}
+.menu li:nth-child(2):hover .sub-menu {
+	display: block;
+}
+.sub-menu li a {
+	display: block;
+	width: 285px;
+	height: 40px;
+	text-decoration: none;
+	background-color: #2C71B8;
+	text-align: left;
+	padding-left: 30px;
+	line-height: 40px;
+}
+.sub-menu li a:hover {
+	background-color: white;
+	color: #2C71B8!important;
+}
+.sub-menu li:first-child a {
+	padding-top: 17px;
+	height: 57px;
+}
+.sub-menu li:last-child a {
+	padding-bottom: 17px;
+	height: 57px;
+}
+.arrow-down {
+	position: absolute;
+	color: white;
+	top: 1px;
+	right: 13px;
+	font-size: 8px;
+	display: none;
+}
+.menu > ul > li:nth-child(2):hover .arrow-down {
+	display: block;
 }
 .search-block {
 	float: left;
 	position: relative;
 	margin-left: 20px;
 }
-input[type="text"] {
+input[type="search"] {
 	height: 40px;
 	width: 200px;
 	font-size: 21px;
