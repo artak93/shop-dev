@@ -80,7 +80,7 @@ body {
 }
 .sub-menu {
 	position: absolute;
-	left: -11px;
+	left: -8px;
 	display: none;
 	z-index: 10;
 }
