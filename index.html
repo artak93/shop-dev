@@ -11,9 +11,11 @@
 	<header class="header">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-3 logo"></div>
-				<div class="col-md-6 menu">
-					<ul>
+				<div class="col-md-3">
+					<div class="logo"></div>
+				</div>
+				<div class="col-md-6">
+					<ul class="menu">
 						<li><a href="">Home</a></li>
 						<li>
 							<a href="">Products</a>
@@ -32,19 +34,66 @@
 						<li><a href="">Shipping</a></li>
 					</ul>
 				</div>
-				<div class="col-md-3 search">
-					<div class="search-block">
-						<input type="search" placeholder="search">
-						<div class="search-icon"></div>
-					</div>
-					<div class="basket">
-						<div class="basket-number">4</div>
-					</div>
+				<div class="col-md-3">
+					<div class="search">
+						<div class="search-block">
+							<input type="search" placeholder="search">
+							<div class="search-icon"></div>
+						</div>
+						<div class="basket">
+							<div class="basket-number">4</div>
+						</div>
+					</div>	
 				</div>
 			</div>	
 		</div>	
 	</header>
-	<main class="main"></main>
+	<main class="main">
+		<div class="container">
+			<div class="col-md-3">
+				<form action="">
+					<div class="device-type">
+						<p>Device Type</p>
+						<input type="checkbox" id="check-laptop" checked>
+						<label for="check-laptop">Laptop</label>
+						<input type="checkbox"  id="check-tablet">
+						<label for="check-tablet">Tablet</label>
+					</div>
+					<div class="device-color">
+						<p>Color</p>
+						<input type="checkbox" id="check-color-black">
+						<label for="check-color-black">Black</label>
+						<input type="checkbox" id="check-color-red">
+						<label for="check-color-red">Red</label>
+						<input type="checkbox" id="check-color-green" checked>
+						<label for="check-color-green">Green</label>
+						<input type="checkbox" id="check-color-blue">
+						<label for="check-color-blue">Blue</label>
+						<input type="checkbox" id="check-color-orange">
+						<label for="check-color-orange">Orange</label>
+					</div>	
+					<div class="device-ram">
+						<p>Ram</p>
+						<input type="checkbox" id="check-ram-1">
+						<label for="check-ram-1">1GB</label>
+						<input type="checkbox" id="check-ram-2">
+						<label for="check-ram-2">2GB</label>
+						<input type="checkbox" id="check-ram-4" checked>
+						<label for="check-ram-4">4GB</label>
+						<input type="checkbox" id="check-ram-6">
+						<label for="check-ram-6">6GB</label>
+						<input type="checkbox" id="check-ram-8">
+						<label for="check-ram-8">8GB</label>
+					</div>
+					<p class="more-options">Show more options ...</p>
+					<input type="submit" value="Submit">
+				</form>
+			</div>
+			<div class="col-md-9">
+				
+			</div>
+		</div>
+	</main>
 	<footer class="footer"></footer>
 </body>
 </html>
