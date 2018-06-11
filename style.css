@@ -262,6 +262,7 @@ div.sort_by {
 }
 ul.main-sort li {
 	list-style: none;
+	background: #2C71B8;
 }
 ul.main-sort > li {
 	position: relative;
