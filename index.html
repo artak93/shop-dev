@@ -5,7 +5,7 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="bootstrap.css">
 	<link rel="stylesheet" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
 </head>
 <body>
 	<header class="header">
@@ -50,50 +50,235 @@
 	</header>
 	<main class="main">
 		<div class="container">
-			<div class="col-md-3">
-				<form action="">
-					<div class="device-type">
-						<p>Device Type</p>
-						<input type="checkbox" id="check-laptop" checked>
-						<label for="check-laptop">Laptop</label>
-						<input type="checkbox"  id="check-tablet">
-						<label for="check-tablet">Tablet</label>
-					</div>
-					<div class="device-color">
-						<p>Color</p>
-						<input type="checkbox" id="check-color-black">
-						<label for="check-color-black">Black</label>
-						<input type="checkbox" id="check-color-red">
-						<label for="check-color-red">Red</label>
-						<input type="checkbox" id="check-color-green" checked>
-						<label for="check-color-green">Green</label>
-						<input type="checkbox" id="check-color-blue">
-						<label for="check-color-blue">Blue</label>
-						<input type="checkbox" id="check-color-orange">
-						<label for="check-color-orange">Orange</label>
+			<div class="row">
+				<div class="col-md-3">
+					<form action="" id="aside-form">
+						<div class="device-type">
+							<p>Device Type</p>
+							<input type="checkbox" id="check-laptop" checked>
+							<label for="check-laptop">Laptop</label>
+							<input type="checkbox"  id="check-tablet">
+							<label for="check-tablet">Tablet</label>
+						</div>
+						<div class="device-color">
+							<p>Color</p>
+							<input type="checkbox" id="check-color-black">
+							<label for="check-color-black">Black</label>
+							<input type="checkbox" id="check-color-red">
+							<label for="check-color-red">Red</label>
+							<input type="checkbox" id="check-color-green" checked>
+							<label for="check-color-green">Green</label>
+							<input type="checkbox" id="check-color-blue">
+							<label for="check-color-blue">Blue</label>
+							<input type="checkbox" id="check-color-orange">
+							<label for="check-color-orange">Orange</label>
+						</div>	
+						<div class="device-ram">
+							<p>Ram</p>
+							<input type="checkbox" id="check-ram-1">
+							<label for="check-ram-1">1GB</label>
+							<input type="checkbox" id="check-ram-2">
+							<label for="check-ram-2">2GB</label>
+							<input type="checkbox" id="check-ram-4" checked>
+							<label for="check-ram-4">4GB</label>
+							<input type="checkbox" id="check-ram-6">
+							<label for="check-ram-6">6GB</label>
+							<input type="checkbox" id="check-ram-8">
+							<label for="check-ram-8">8GB</label>
+						</div>
+						<p class="more-options">Show more options ...</p>
+						<input type="submit" value="Submit">
+					</form>
+				</div>
+				<div class="col-md-9">
+					<div class="laptops_and_tablets">
+						<div class="laptops_and_tablets_up">
+							<p>Home page > Products > <span class="underline">Laptops and Tablets</span></p>
+							<p class="laptops">Laptops and Tablets</p>
+							<div class="sort_by">
+								<ul class="main-sort">
+									<li><a href="">sort by price <span class="arrow-down2 glyph">A</span></a>
+										<ul class="sub-sort">
+											<li><a href="">sort by name</a></li>
+											<li><a href="">sort by date</a></li>
+											<li><a href="">sord by popularity</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>	
+						<div class="items">
+							<div class="item">
+								<div class="picture-item picture-item1">
+									<div class="scale-image"></div>
+									<div class="like-image"></div>
+								</div>
+								<div class="description">
+									<p class="device-name">#1 Device Name</p>
+									<p class="device-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									<p class="type"><span>Type:</span> Laptop</p>
+									<p class="screen-size"><span>Screen-size:</span> 7 inches</p>
+									<p class="ram-device"><span>Ram:</span> 1GB</p>
+									<p class="price-device">$599<sup> 25</sup></p>
+									<a href="">More Details</a>
+									<form action="" id="buttons">
+										<button value="">Add to cart</button>
+									</form>
+								</div>
+							</div>
+							<div class="item">
+								<div class="picture-item picture-item2">
+									<div class="scale-image"></div>
+									<div class="like-image"></div>
+								</div>
+								<div class="description">
+									<p class="device-name">#2 Device Name</p>
+									<p class="device-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									<p class="type"><span>Type:</span> Laptop</p>
+									<p class="screen-size"><span>Screen-size:</span> 7 inches</p>
+									<p class="ram-device"><span>Ram:</span> 1GB</p>
+									<p class="price-device">$1250<sup> 99</sup></p>
+									<a href="">More Details</a>
+									<form action="" id="buttons">
+										<button value="">Add to cart</button>
+									</form>
+								</div>
+							</div>
+							<div class="item">
+								<div class="picture-item picture-item3">
+									<div class="scale-image"></div>
+									<div class="like-image"></div>
+								</div>
+								<div class="description">
+									<p class="device-name">#3 Device Name</p>
+									<p class="device-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									<p class="type"><span>Type:</span> Laptop</p>
+									<p class="screen-size"><span>Screen-size:</span> 7 inches</p>
+									<p class="ram-device"><span>Ram:</span> 1GB</p>
+									<p class="price-device">$399<sup> 50</sup></p>
+									<a href="">More Details</a>
+									<form action="" id="buttons">
+										<button value="">Add to cart</button>
+									</form>
+								</div>
+							</div>	
+							<div class="item">
+								<div class="picture-item picture-item4">
+									<div class="scale-image"></div>
+									<div class="like-image"></div>
+								</div>
+								<div class="description">
+									<p class="device-name">#1 Device Name</p>
+									<p class="device-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									<p class="type"><span>Type:</span> Laptop</p>
+									<p class="screen-size"><span>Screen-size:</span> 7 inches</p>
+									<p class="ram-device"><span>Ram:</span> 1GB</p>
+									<p class="price-device">$599<sup> 25</sup></p>
+									<a href="">More Details</a>
+									<form action="" id="buttons">
+										<button value="">Add to cart</button>
+									</form>
+								</div>
+							</div>
+							<div class="item">
+								<div class="picture-item picture-item5">
+									<div class="scale-image"></div>
+									<div class="like-image"></div>
+								</div>
+								<div class="description">
+									<p class="device-name">#2 Device Name</p>
+									<p class="device-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									<p class="type"><span>Type:</span> Laptop</p>
+									<p class="screen-size"><span>Screen-size:</span> 7 inches</p>
+									<p class="ram-device"><span>Ram:</span> 1GB</p>
+									<p class="price-device">$1250<sup> 99</sup></p>
+									<a href="">More Details</a>
+									<form action="" id="buttons">
+										<button value="">Add to cart</button>
+									</form>
+								</div>
+							</div>
+							<div class="item">
+								<div class="picture-item picture-item6">
+									<div class="scale-image"></div>
+									<div class="like-image"></div>
+								</div>
+								<div class="description">
+									<p class="device-name">#3 Device Name</p>
+									<p class="device-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									<p class="type"><span>Type:</span> Laptop</p>
+									<p class="screen-size"><span>Screen-size:</span> 7 inches</p>
+									<p class="ram-device"><span>Ram:</span> 1GB</p>
+									<p class="price-device">$399<sup> 50</sup></p>
+									<a href="">More Details</a>
+									<form action="" id="buttons">
+										<button value="">Add to cart</button>
+									</form>
+								</div>
+							</div>	
+							<div class="item">
+								<div class="picture-item picture-item7">
+									<div class="scale-image"></div>
+									<div class="like-image"></div>
+								</div>
+								<div class="description">
+									<p class="device-name">#1 Device Name</p>
+									<p class="device-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									<p class="type"><span>Type:</span> Laptop</p>
+									<p class="screen-size"><span>Screen-size:</span> 7 inches</p>
+									<p class="ram-device"><span>Ram:</span> 1GB</p>
+									<p class="price-device">$599<sup> 25</sup></p>
+									<a href="">More Details</a>
+									<form action="" id="buttons">
+										<button value="">Add to cart</button>
+									</form>
+								</div>
+							</div>
+							<div class="item">
+								<div class="picture-item picture-item8">
+									<div class="scale-image"></div>
+									<div class="like-image"></div>
+								</div>
+								<div class="description">
+									<p class="device-name">#2 Device Name</p>
+									<p class="device-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									<p class="type"><span>Type:</span> Laptop</p>
+									<p class="screen-size"><span>Screen-size:</span> 7 inches</p>
+									<p class="ram-device"><span>Ram:</span> 1GB</p>
+									<p class="price-device">$1250<sup> 99</sup></p>
+									<a href="">More Details</a>
+									<form action="" id="buttons">
+										<button value="">Add to cart</button>
+									</form>
+								</div>
+							</div>
+							<div class="item">
+								<div class="picture-item picture-item9">
+									<div class="scale-image"></div>
+									<div class="like-image"></div>
+								</div>
+								<div class="description">
+									<p class="device-name">#3 Device Name</p>
+									<p class="device-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									<p class="type"><span>Type:</span> Laptop</p>
+									<p class="screen-size"><span>Screen-size:</span> 7 inches</p>
+									<p class="ram-device"><span>Ram:</span> 1GB</p>
+									<p class="price-device">$399<sup> 50</sup></p>
+									<a href="">More Details</a>
+									<form action="" id="buttons">
+										<button value="">Add to cart</button>
+									</form>
+								</div>
+							</div>
+						</div>
+						<p class="load-more">Load more ...</p>
 					</div>	
-					<div class="device-ram">
-						<p>Ram</p>
-						<input type="checkbox" id="check-ram-1">
-						<label for="check-ram-1">1GB</label>
-						<input type="checkbox" id="check-ram-2">
-						<label for="check-ram-2">2GB</label>
-						<input type="checkbox" id="check-ram-4" checked>
-						<label for="check-ram-4">4GB</label>
-						<input type="checkbox" id="check-ram-6">
-						<label for="check-ram-6">6GB</label>
-						<input type="checkbox" id="check-ram-8">
-						<label for="check-ram-8">8GB</label>
-					</div>
-					<p class="more-options">Show more options ...</p>
-					<input type="submit" value="Submit">
-				</form>
-			</div>
-			<div class="col-md-9">
-				
-			</div>
+				</div>
+			</div>	
 		</div>
 	</main>
-	<footer class="footer"></footer>
+	<footer class="footer">
+		<p class="copyright">&copy; Copyright 2017</p>
+	</footer>
 </body>
 </html>

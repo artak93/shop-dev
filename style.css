@@ -1,5 +1,6 @@
 * {
 	box-sizing: border-box;
+	font-family: "Roboto";
 }
 
 @font-face {
@@ -179,7 +180,7 @@ input::placeholder {
 	font-weight: normal;
 }
 
-form {
+#aside-form {
 	background-color: rgba(255, 255, 255, 0.2);
 	font-family: "Roboto";
 	color: white;
@@ -188,7 +189,7 @@ form {
 	padding-left: 30px;
 	padding-right: 30px;
 	border-right: 1px solid white;
-	margin-right: 15px;
+	margin-right: 23px;
 }
 form p {
 	text-transform: uppercase;
@@ -235,4 +236,267 @@ input[type="submit"] {
 }
 input[type="checkbox"]:checked + label::before {
 	background: white;
+}
+.laptops_and_tablets {
+	margin-left: 7px;
+}
+.laptops_and_tablets_up > p:first-child {
+	font-size: 14px;
+	font-weight: 300;
+	color: rgba(255, 255, 255, 0.5);
+	margin-top: 26px;
+}
+span.underline {
+	text-decoration: underline;
+}
+p.laptops {
+	font-size: 48px;
+	font-weight: bold;
+	color: white;
+	margin-top: -3px;
+	float: left;
+}
+div.sort_by {
+	float: right;
+	margin-top: 8px;
+}
+ul.main-sort li {
+	list-style: none;
+}
+ul.main-sort > li {
+	position: relative;
+}
+ul.main-sort li a {
+	display: block;
+	color: white;
+	width: 270px;
+	height: 40px;
+	border: 1px solid white;
+	padding-left: 19px;
+	font-size: 21px;
+	line-height: 40px;
+	font-weight: 300;
+}
+ul.sub-sort {
+	position: absolute;
+	left: -40px;
+	top: 40px;
+	display: none;
+	z-index: 10;
+}
+ul.main-sort > li:hover .sub-sort {
+	display: block;
+}
+ul.sub-sort li a {
+	border-top-style: none;
+}
+ul.sub-sort li:hover a {
+	background: white;
+	color: #2C71B8;
+	text-decoration: none;
+}
+ul.main-sort > li:hover > a {
+	text-decoration: none;
+}
+.arrow-down2 {
+	position: absolute;
+	font-size: 14px;
+	color: white;
+	right: 15px;
+}
+.laptops_and_tablets_up::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.item {
+	width: 270px;
+	height: 652px;
+	border: 1px solid white;
+	margin-right: 27px;
+	display: inline-block;
+	margin-bottom: 30px;
+}
+.picture-item {
+	height: 180px;
+	position: relative;
+}
+.picture-item1 {
+	background: rgba(255, 255, 255, 0.8) url(images/icon_monitor.png) no-repeat 50% 50%;
+}
+.picture-item2 {
+	background: rgba(255, 255, 255, 0.8) url(images/icon_2.png) no-repeat 50% 50%;
+}
+.picture-item3 {
+	background: rgba(255, 255, 255, 0.8) url(images/icon_3.png) no-repeat 50% 50%;
+}
+.picture-item4 {
+	background: rgba(255, 255, 255, 0.8) url(images/icon_4.png) no-repeat 50% 50%;
+}
+.picture-item5 {
+	background: rgba(255, 255, 255, 0.8) url(images/icon_5.png) no-repeat 50% 50%;
+}
+.picture-item6 {
+	background: rgba(255, 255, 255, 0.8) url(images/icon_6.png) no-repeat 50% 50%;
+}
+.picture-item7 {
+	background: rgba(255, 255, 255, 0.8) url(images/icon_7.png) no-repeat 50% 50%;
+}
+.picture-item8 {
+	background: rgba(255, 255, 255, 0.8) url(images/icon_8.png) no-repeat 50% 50%;
+}
+.picture-item9 {
+	background: rgba(255, 255, 255, 0.8) url(images/icon_9.png) no-repeat 50% 50%;
+}
+.item:nth-child(3n) {
+	margin-right: -1px;
+}
+.picture-item::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 120%;
+	height: 1px;
+	background: white;
+	transform: rotate(33.75deg);
+	transform-origin: 0;
+	z-index: -1;
+}
+.picture-item::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 120%;
+	height: 1px;
+	background: white;
+	transform: rotate(-33.75deg);
+	transform-origin: 91.5% 92px;
+	z-index: -1;
+}
+.scale-image {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background: transparent url(images/icon_scale2.png) no-repeat 50% 50%;
+	border: 1px solid #2C71B8;
+	right: 10px;
+	top: 10px;
+	cursor: pointer;
+}
+.like-image {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background: transparent url(images/icon_like1.png) no-repeat 50% 50%;
+	border: 1px solid #2C71B8;
+	right: 10px;
+	top: 50px;
+	cursor: pointer;
+}
+.scale-image:hover {
+	background: #2C71B8 url(images/icon_scale1.png) no-repeat 50% 50%;
+}
+.like-image:hover {
+	background: #2C71B8 url(images/icon_like2.png) no-repeat 50% 50%;
+}
+.description {
+	padding-left: 15px;
+	padding-right: 30px;
+	color: white;
+	background: rgba(44, 113, 184, 0.8);
+}
+.device-name {
+	font-size: 30px;
+	font-weight: bold;
+	margin-top: 6px;
+}
+.device-details {
+	margin-top: -8px;
+	line-height: 25px;
+}
+.device-details, .type, .screen-size, .ram-device {
+	font-size: 21px;
+	font-weight: 300;
+}
+.type {
+	margin-top: -2px;
+}
+.screen-size {
+	margin-top: -4px;
+}
+.ram-device {
+	margin-top: -5px;
+}
+.description span {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.price-device {
+	font-size: 48px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 13px;
+}
+sup {
+	font-size: 30px;
+}
+.description > a {
+	display: block;
+	margin-bottom: 14px;
+}
+.description > a, button {
+	width: 210px;
+	height: 50px;
+	color: white;
+	background: #2C71B8;
+	font-size: 21px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 50px;
+	border: 1px solid white;
+	text-transform: uppercase;
+	margin-left: 15px;
+}
+button {
+	margin-bottom: 30px;
+	position: relative;
+	text-align: left;
+	padding-left: 27px;
+}
+button::after {
+	content: "";
+	position: absolute;
+	width: 15px;
+	height: 17px;
+	top: 15px;
+	right: 21px;
+	background: url(images/icon_cart.png) no-repeat 50% 50%;
+}
+button:hover, .description > a:hover {
+	background-color: rgba(255, 255, 255, 0.3);
+	text-decoration: none;
+}
+.load-more {
+	font-size: 36px;
+	font-weight: 300;
+	color: white;
+	text-align: center;
+	margin-bottom: 80px;
+}
+.copyright {
+	font-size: 21px;
+	font-weight: 300;
+	color: #2C71B8;
+	text-align: center;
+}
+.footer {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background: rgba(255, 255, 255, 0.8);
 }
